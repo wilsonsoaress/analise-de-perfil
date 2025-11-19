@@ -78,6 +78,3 @@ Os arquivos essenciais que precisam de atenção imediata estão localizados nas
   * **Estado Frontend:** `frontend/src/context/FormularioContext.jsx` (Gerenciar as 20 respostas)
   * **Componente UI:** `frontend/src/components/CardForm.jsx`
 
------
-
-**Bons códigos a todos\!**
