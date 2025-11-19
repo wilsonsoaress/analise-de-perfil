@@ -1,0 +1,68 @@
+# ---------------------------------------------------------------- #
+# 1. DEPENDÊNCIAS E ARQUIVOS DE BUILD/CACHE
+# ---------------------------------------------------------------- #
+
+# Node.js
+# Pastas de dependências que são instaladas via npm
+/backend/node_modules
+/frontend/node_modules
+
+# Arquivos de log de debug do NPM
+npm-debug.log*
+yarn-error.log
+.pnpm-debug.log*
+
+# Arquivos de cache de desenvolvimento
+.DS_Store
+.env.local
+
+# ---------------------------------------------------------------- #
+# 2. ARQUIVOS ESPECÍFICOS DO FRONTEND (REACT)
+# ---------------------------------------------------------------- #
+
+# Pasta de build de produção do React
+/frontend/build
+/frontend/dist
+
+# Arquivos de cache e logs do React
+.cache
+coverage
+
+# ---------------------------------------------------------------- #
+# 3. ARQUIVOS ESPECÍFICOS DO BACKEND (NODE)
+# ---------------------------------------------------------------- #
+
+# Logs de aplicação
+/backend/logs
+*.log
+
+# Variáveis de ambiente secretas (Muito importante!)
+/backend/.env
+/backend/.env.*
+.vscode/.env # Caso você use .env na raiz ou na pasta VSCode
+
+# ---------------------------------------------------------------- #
+# 4. ARQUIVOS E DIRETÓRIOS DO AMBIENTE LOCAL
+# ---------------------------------------------------------------- #
+
+# VS Code (Configurações específicas do usuário)
+.vscode/
+
+# Configurações do IDE (ex: JetBrains/WebStorm)
+.idea/
+
+# Windows / macOS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------------------------------------------------------------- #
+# 5. ARQUIVOS DO DOCKER (Opcional, mas útil)
+# ---------------------------------------------------------------- #
+
+# Ignora o Docker Compose local para evitar que devs subam acidentalmente
+# arquivos .yml com credenciais locais, se houver
+# docker-compose.local.yml
+
+# Arquivos de cache do Docker
+.dockerignore
